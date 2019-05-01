@@ -172,5 +172,6 @@ for item in redactedfeatureslist:
 x_test = vec.fit_transform(x_test)
 y_pred =  model.predict(x_test)
 print(y_pred)
+f=open('output.txt')
 for item in y_pred:
-    print(item)
+    f.write(item)
