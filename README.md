@@ -60,6 +60,8 @@ I this, I used the DictVectorizer to transform list of dicts in x_test to compat
 x_test = vec.fit_transform(x_test)
 y_pred =  model.predict(x_test)
 
+I have used only one nearest neighbour to the name while predicting.
+
 Bugs: -Errors will occur if the training and test files don’t contain at least one name.
 
 
